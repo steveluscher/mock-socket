@@ -120,7 +120,7 @@ class Server extends EventTarget {
         createCloseEvent({
           type: 'close',
           target: socket.target,
-          code: code || CLOSE_CODES.CLOSE_NORMAL,
+          code: code ?? CLOSE_CODES.CLOSE_NORMAL,
           reason: reason || '',
           wasClean
         })
